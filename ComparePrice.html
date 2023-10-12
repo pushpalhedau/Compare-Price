@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Price</title>
+    <style>
+        .Display{
+            display: inline-block;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Find Your Favourite Products In Just One Click</h1>
+    <form method="POST" script="ComparePrice.py">
+        <label for="user_input">Enter Text:</label>
+        <input type="text" name="user_input" id="user_input">
+        <button type="submit">Submit</button>
+    </form>
+    </center>>
+
+    <!-- Display the table -->
+    <center>
+    <table class="Display" border="1">
+        <tr>
+            <th>PRODUCT</th>
+        </tr>
+        {% for item1 in names %}
+            <tr>
+                <td>{{ item1 }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <table class="Display" border="1">
+        <tr>
+            <th>PRICE</th>
+        </tr>
+        {% for item1 in prices %}
+            <tr>
+                <td>{{ item1 }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <table class="Display" border="1">
+        <tr>
+            <th>Source</th>
+        </tr>
+        {% for item1 in sources %}
+            <tr>
+                <td>{{ item1 }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <table class="Display" border="1">
+        <tr>
+            <th>LINK</th>
+        </tr>
+        {% for item1 in links %}
+            <tr>
+                <td><a href=" {{ item1 }} ">Buy Now</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+    </center>>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Compare Price",
+  "version": "1.0",
+  "description": "Find Your Product In Just One Click.",
+  "action": {
+    "default_popup": "templates/ComparePrice.html",
+    "default_icon": {
+      "16": "Compare Price Icon.png",
+      "48": "Compare Price Icon.png",
+      "128": "Compare Price Icon.png"
+    }
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
