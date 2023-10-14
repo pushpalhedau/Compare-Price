@@ -3,7 +3,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 from flask import Flask, render_template, request
 
-app = Flask(__name__, template_folder="templates")
+app = Flask(__name__, template_folder="")
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
